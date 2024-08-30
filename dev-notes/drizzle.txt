@@ -1,0 +1,36 @@
+- install 
+    - drizzle 
+        npm i drizzle-orm // query builder 
+        npm i -D drizzle-kit // a CLI companion for automatic SQL migrations generation and rapid prototyping
+    - dotenv 
+        npm i dotenv
+- db config  
+    - db url 
+        - docker container: URL: "postgresql://<username>:<password>@<host>:<port>/<database_name>."
+    - env variables 
+        - create .env: DATABASE_URL
+        - create .env.development : DEV_SCHEMA 
+        - add to .gitignore file 
+    - create drizzle.config.ts in root 
+    - create drizzle folder in root or in /src if exists: 
+        - create migrations folder  
+        - create schema.ts 
+        - create db.ts // client connection NOTE: TODO 
+        - optional: migrate.ts // configuration for generating migrations 
+            - can use "drizzle-kit migrate" command
+commands: 
+    - npx drizzle-kit push 
+
+optional step: add shorthand scripts to package.json 
+- scripts 
+    dev:push - NODE_ENV=development npx drizzle-kit push
+    prod:push
+    studio 
+    dev:gen
+    prod:gen 
+    dev:drop
+    prod:drop  
+
+
+NOTE: TODO: need drizzle link to all these steps so we can remain up to date on any changes 
+

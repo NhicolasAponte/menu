@@ -1,0 +1,12 @@
+--- aug 29 --- 
+- set up drizzle 
+    - drizzle config 
+    - preliminary schema 
+- added env variables 
+- at this point, npx drizzle-kit push works, but custom schema was not created
+    - set in env variable, not sure why it wasn't created 
+
+next 
+- initialize query pattern 
+- client side list showing products 
+- admin side button to add product 
