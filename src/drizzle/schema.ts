@@ -9,6 +9,9 @@ export const MenuTable = dbSchema.table("menu", {
   category: varchar("category", { length: 100 }).notNull(),
 });
 
+export type MenuInsert = typeof MenuTable.$inferInsert;
+export type MenuSelect = typeof MenuTable.$inferSelect;
+
 export const MenuItemTable = dbSchema.table("menu_item", {
   id: uuid("id").defaultRandom().primaryKey(),
   name: varchar("name", { length: 100 }).notNull(),

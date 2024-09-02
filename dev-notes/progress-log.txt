@@ -6,7 +6,16 @@
 - at this point, npx drizzle-kit push works, but custom schema was not created
     - set in env variable, not sure why it wasn't created 
 
+--- sep 1 --- 
+- put drizzle config options in env variables 
+- created database query client in db.t 
+- stubbed in admin route  
+- stubbed in list box and create menu button 
+- generated shadcn button 
+- stubbed in fetch and create server functions 
+- exported schema table types from schema.ts 
+
 next 
-- initialize query pattern 
 - client side list showing products 
 - admin side button to add product 
+- initialize query pattern 
